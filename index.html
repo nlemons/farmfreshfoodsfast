@@ -4,50 +4,115 @@
   <meta charset="UTF-8" />
   <title>Farm Fresh Foods Delivered – East Texas Farm to Your Table</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <style>
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 0;
       padding: 0;
-      background: #F6E7CF;
+      background: #F6E7CF; /* matched to logo background */
       color: #123524;
       text-align: center;
     }
+
     .wrap {
       max-width: 800px;
       margin: 0 auto;
       padding: 40px 20px 60px;
     }
+
     img.logo {
       max-width: 320px;
       height: auto;
       display: block;
       margin: 0 auto 24px;
     }
+
     h1 {
       letter-spacing: 0.05em;
       margin-bottom: 8px;
     }
+
     h2 {
       margin-top: 0;
       font-weight: 500;
       color: #b86c29;
     }
+
     p {
       line-height: 1.6;
       max-width: 620px;
       margin: 0.5rem auto;
     }
+
+    /* --- Early Adopter Form --- */
+
+    .signup-title {
+      margin-top: 36px;
+      margin-bottom: 12px;
+      font-size: 1.1rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .signup-form {
+      max-width: 360px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .signup-form input {
+      padding: 12px;
+      font-size: 1rem;
+      border: 1px solid #d6c7a8;
+      border-radius: 4px;
+    }
+
+    .signup-form button {
+      padding: 12px;
+      background: #123524;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .signup-form button:hover {
+      background: #0e2a1c;
+    }
   </style>
 </head>
+
 <body>
   <div class="wrap">
+
     <img src="logo.png" alt="Farm Fresh Foods Delivered logo" class="logo" />
-    <p>Local, organic, grassfed, pasture raised East Texas beef (steaks), chicken, and eggs—pre-ordered online and delivered directly to your door.</p>
-    <p>For early access, and early adopter discounts, let us put you on the list!</a></p>
+ Local, organic, grassfed, pasture raised East Texas beef (steaks), chicken, 
+ and eggs—pre-ordered online and delivered directly to your door.
+    </p>
+
+    <!-- Early Adopter Form -->
+    <h3 class="signup-title">Early Adopter Fresh List</h3>
+
+    <form
+      class="signup-form"
+      action="https://formspree.io/f/mnnegqow"
+      method="POST"
+    >
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <button type="submit">Join the Fresh List</button>
+    </form>
+
   </div>
 </body>
 </html>
+
 
 
 
