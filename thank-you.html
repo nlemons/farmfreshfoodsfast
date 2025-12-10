@@ -2,60 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>You’re on the List</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <title>Thank You – Fresh List</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     body {
       margin: 0;
       padding: 0;
-      background: #F6E7CF; /* SAME background */
-      color: #123524;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #EAF3F7;
+      color: #123524;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
       text-align: center;
     }
 
     .wrap {
-      max-width: 520px;
-      margin: 120px auto 0;
       padding: 32px 24px;
+      max-width: 520px;
     }
 
     h1 {
-      margin-bottom: 12px;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
     }
 
     p {
-      line-height: 1.6;
-      margin: 10px 0;
+      margin: 0.4rem 0;
+      line-height: 1.5;
     }
 
-    a {
-      display: inline-block;
-      margin-top: 28px;
-      color: #123524;
-      text-decoration: underline;
+    .highlight {
       font-weight: 600;
+    }
+
+    a.back-home {
+      display: inline-block;
+      margin-top: 1.4rem;
+      padding: 0.6rem 1.4rem;
+      border-radius: 999px;
+      text-decoration: none;
+      border: 1px solid #123524;
+      color: #123524;
+      font-size: 0.95rem;
+    }
+
+    a.back-home:hover {
+      background: #123524;
+      color: #EAF3F7;
     }
   </style>
 </head>
 <body>
-
   <div class="wrap">
-    <h1>You’re on the list ✅</h1>
-
+    <h1>You're on the Fresh List! 🥩🥚</h1>
+    <p class="highlight">Thank you for joining our Early Adopter Fresh List.</p>
     <p>
-      Thanks for joining our Farm Fresh list.
-      We’ll notify you when meat, eggs, and farm products
-      are available for local delivery.
+      You’ll be the first to know when we open up weekly delivery windows for 
+      local, grass-fed beef, pasture-raised chicken, and farm-fresh eggs in East Texas.
+    </p>
+    <p>
+      Keep an eye on your inbox for updates, ordering links, and delivery dates.
     </p>
 
-    <p>
-      No spam. Just real food and limited drops.
-    </p>
-
-    <a href="/">← Back to Farm Fresh Foods Fast</a>
+    <a href="./" class="back-home">Back to Farm Fresh Foods Delivered</a>
   </div>
-
 </body>
 </html>
+
+
