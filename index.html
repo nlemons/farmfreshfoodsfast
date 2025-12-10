@@ -10,7 +10,7 @@
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 0;
       padding: 0;
-      background: #F6E7CF; /* matched to logo background */
+      background: #F6E7CF;
       color: #123524;
       text-align: center;
     }
@@ -22,19 +22,19 @@
     }
 
     img.logo {
-      max-width: 420px; /* logo slightly larger */
+      max-width: 420px;
       height: auto;
       display: block;
-      margin: 0 auto 8px;
+      margin: 0 auto 6px;   /* tighter spacing */
     }
 
     h1 {
       letter-spacing: 0.05em;
-      margin-bottom: 8px;
+      margin: 4px 0 2px;    /* remove default browser margins */
     }
 
     h2 {
-      margin-top: 0;
+      margin: 0 0 10px;     /* tight but clean */
       font-weight: 500;
       color: #b86c29;
     }
@@ -42,13 +42,13 @@
     p {
       line-height: 1.6;
       max-width: 620px;
-      margin: 0.5rem auto;
+      margin: 8px auto;
     }
 
     /* --- Early Adopter Form --- */
 
     .signup-title {
-      margin-top: 36px;
+      margin-top: 28px;
       margin-bottom: 12px;
       font-size: 1.1rem;
       letter-spacing: 0.06em;
@@ -91,8 +91,14 @@
   <div class="wrap">
 
     <img src="logo.png" alt="Farm Fresh Foods Delivered logo" class="logo" />
-      Local, organic, grassfed, pasture-raised beef (steaks, ground), chicken (bone-in, boneless),
-      and eggs—pre-ordered online and delivered directly from East Texas farms to you this week.
+
+    <h1>FARM FRESH FOODS</h1>
+    <h2>DELIVERED</h2>
+
+    <p>
+      Local, organic, grassfed, pasture-raised beef (steaks, ground),
+      chicken (bone-in, boneless), and eggs — pre-ordered online and
+      delivered directly from East Texas farms to you this week.
     </p>
 
     <!-- Early Adopter Form -->
@@ -112,6 +118,3 @@
   </div>
 </body>
 </html>
-
-
-
